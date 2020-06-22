@@ -1,0 +1,1 @@
+// for keeping track of the high score mechanic of the web app
