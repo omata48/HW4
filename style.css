@@ -4,3 +4,13 @@ header{
 main{
     margin-top: 20px;
 }
+
+.answers {
+    text-align: left;
+    width: 75%;
+    margin-bottom: 10px;
+}
+
+#question{
+    margin-bottom: 20px;
+}

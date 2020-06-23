@@ -16,14 +16,17 @@ var questions = [
 		title: "Arrays in JavaScript can be used to store ____.",
 		choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
 		answer: "all of the above"
-    }    
+	},
+	{
+		title: "Commonly used data types DO NOT include:",
+		choices: ["strings", "booleans", "alerts", "numbers"],
+		answer: "alerts"
+	}    
 ]
 
 function storeQuestions(){
-    for (var i = 0;i < questions.length;i++){
-        currentQuestion = questions[i]
-        localStorage.setItem(i,JSON.stringify(currentQuestion));
-    }
+    localStorage.setItem("questions",JSON.stringify(questions));
 }
+
 
 storeQuestions();

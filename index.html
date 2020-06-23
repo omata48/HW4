@@ -14,20 +14,43 @@
             <p class="float-right">Time: <span id="current-time">0</span></p>
         </div>
     </header>
-    <main class="container col-md-12 text-center mx-auto" style="width: 500px;">
+
+    <!-- Starting Screen -->
+    <main id="main-screen" class="container col-md-12 text-center mx-auto" style="width: 500px;">
         <h1 class="">Coding Quiz Challenge</h1>
         <p class="heading-2">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
         <button type="button" id="start-quiz" class="btn btn-secondary">Start Quiz</button>
     </main>
-    <div id="" class="container col-md-12 mx-auto" style="width: 500px;">
-        <h1 id="question-bank">Questions</h1>
-        <div id="questions" class="list-group mt-1 mb-1">
+
+    <!-- Questions Screen -->
+    <section id="questions-screen" class="container col-md-12 mx-auto" style="width: 500px;display: none;">
+        <h1 id="question" class="h2">Questions</h1>
+        <div id="answers" class="list-group mt-1 mb-1">
+            <button id="1" class="btn btn-secondary answers"></button>
+            <button id="2" class="btn btn-secondary answers"></button>
+            <button id="3" class="btn btn-secondary answers"></button>
+            <button id="4" class="btn btn-secondary answers"></button>
         </div>
-    </div>
+        <p id="ifCorrect" class="text-muted" style="display: none;"></p>
+    </section>
+
+    <!-- End Game Screen -->
+    <section id="end-game-screen" class="container col-md-12 mx-auto" style="width: 500px;display: none;margin-top: 5rem;">
+        <h1 id="question" class="h2">All Done!</h1>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <div class="input-group mb-3">
+            <label class="col-form-label mr-2" for="initials">Enter Initials:</label>
+            <input type="text" class="form-control" id="initials">
+            <div class="input-group-append">
+                <!-- <button class="btn btn-secondary" type="button" id="submit-button">Submit</button> -->
+                <a id="submit-button" class="btn btn-secondary btn-sm" href="highscore.html" role="button" style="padding: .375rem .75rem;border-radius: .25rem;font-size: 1rem;">Submit </a>
+            </div>
+        </div>    
+    </section>
 
     <script src="javascript/questions.js"></script>
     <script src="javascript/game.js"></script>
-    <script src="javascript/score.js"></script>
+    <!-- <script src="javascript/score.js"></script> -->
 
 </body>
 </html>
