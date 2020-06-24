@@ -14,3 +14,9 @@ main{
 #question{
     margin-bottom: 20px;
 }
+
+.scores{
+    padding-left: 1rem;
+    height: 2rem;
+    line-height: 2rem;
+}
