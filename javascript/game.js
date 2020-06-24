@@ -46,8 +46,8 @@ function startQuiz(){
             clearInterval(timerInterval);
             alert("Out of Time");
             objectAppear(questionsScreen);
-            questionIndex = -1;
-            finalScore = timerEl.textContent;
+            questionIndex = 0;
+            finalScore = 0;
             finalScoreEl.innerHTML = finalScore;
             objectAppear(headerEl);
             objectAppear(endGameScreen);
